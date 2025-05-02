@@ -1,0 +1,44 @@
+.dialog-box {
+  width: 893px;
+  min-height: 400px;
+  border: 64px solid #fff;
+  border-width: 58px 35px 89px 52px;
+  border-image-source: url("images/hud.png");
+  border-image-width: 110px 393px 270px 500px;
+  border-image-slice: 152 300 240 526 fill;
+  border-image-outset: 0;
+  /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+  border-image-repeat: repeat;
+
+  /*
+  -webkit-mask-box-image-source: url("images/hud.png");
+  -webkit-mask-box-image-width: 110px 393px 270px 500px;
+  -webkit-mask-box-image-slice: 152 300 240 526 fill;
+  -webkit-mask-box-image-outset: 0;
+  -webkit-mask-box-image-repeat: repeat;
+  */
+
+  /* content */
+  font-family: "Jersey 10", monospace;
+  font-size: 2.1rem;
+  text-shadow: 1px 1px 4px #000c;
+  letter-spacing: 0.75px;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 5px #26718c);
+  position: relative;
+
+  & .name {
+    position: absolute;
+    top: -32px;
+    left: 20px;
+    width: 265px;
+    text-align: center;
+  }
+
+  & .avatar {
+    height: 300px;
+    position: absolute;
+    translate: 0 -50px;
+    right: 0;
+  }
+}
