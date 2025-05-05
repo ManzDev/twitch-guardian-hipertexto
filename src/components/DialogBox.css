@@ -1,5 +1,20 @@
-.dialog-box {
+.container {
+  --offset: 200px;
+
   width: 893px;
+  position: relative;
+  margin-left: var(--offset);
+
+  & .avatar {
+    width: 275px;
+    position: absolute;
+    left: calc(var(--offset) * -1);
+    top: 50px;
+  }
+}
+
+.dialog-box {
+  width: 100%;
   min-height: 400px;
   border: 64px solid #fff;
   border-width: 58px 35px 89px 52px;
@@ -35,10 +50,12 @@
     text-align: center;
   }
 
+  /*
   & .avatar {
-    height: 300px;
+    height: 350px;
     position: absolute;
-    translate: 0 -50px;
+    translate: 100px -50px;
     right: 0;
   }
+  */
 }

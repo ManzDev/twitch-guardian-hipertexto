@@ -1,0 +1,3 @@
+- Mientras esté hablando no debe realizar una nueva respuesta.
+- Crear un sistema de colas de mensajes
+- Ahora mismo es posible que entren dos mensajes justo a la misma vez. Hacer un sistema de promesas, que solo deje pasar uno.
